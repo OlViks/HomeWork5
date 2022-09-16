@@ -3,7 +3,7 @@ public class Main {
 
         System.out.println("Задание №5");
         //Задание 1
-        int age = 7;
+        int age = 19;
         if (age >= 18) {
             System.out.println("Виу, ВиУ, Поздравляем с совершеннолетием");
         }
@@ -18,9 +18,29 @@ public class Main {
         if (age >= 18 && age < 24) {
             System.out.println("Человек уже закончил школу и может отправляться в университет.");
         }
-        if (age >= 24)
+        if (age >= 24){
             System.out.println("Человек окончил университет и ему пора искать первую работу.");
+        }
 
+        //Задние 3
+
+        int capacity = 102;
+        int seatCapasity = 60;
+        int standCapasity = capacity - seatCapasity;
+        int seatUsed = 30;
+        int standUsed = 10;
+        if (seatUsed < seatCapasity){
+            System.out.println ("Есть еще " + (seatCapasity - seatUsed) + " сидячих мест.");
+        }
+        if (standUsed < standCapasity){
+            System.out.println ("Есть еще " + (standCapasity - standUsed) + " стоячих мест.");
+        }
+        if (standUsed == standCapasity){
+            System.out.println ("Сидячих мест нет.");
+        }
+        if (seatUsed == seatCapasity) {
+            System.out.println("Стоячих мест нет.");
+        }
 
     }
 }
